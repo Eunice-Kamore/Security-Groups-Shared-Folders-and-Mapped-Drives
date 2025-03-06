@@ -75,17 +75,20 @@ Now that we have our shared folder, to confirm open File Explorer → This PC �
    <br />
 </p>
 
+
 Now we are going to specify access permissions for the folders. Now right click on the "Finance" folder and click on "Properties". 
 
-10. <p align="center">
+10.
+  <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/17.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 5"/>
    <br />
    <br />
-</p>
+   </p>
 
 Navigate to the "Security" tab and click on "Edit" to add "Sarah Jakes" as an authorized account for the "Finance" folder.
 
-11. <p align="center">
+11.
+    <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/18.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 5"/>
    <br />
    <br />
@@ -93,12 +96,14 @@ Navigate to the "Security" tab and click on "Edit" to add "Sarah Jakes" as an au
 
 Type the name "Sarah Jakes" and click on check names. This searches the name from our domain. Once the name is found click "OK"
 
+
 12. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/19.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 6"/>
    <br />
    <br />
 </p>
 Now we need to delete the other "Users" user names because we need the folder to be accessed by Sarah Jakes and the Administrator only. To do this click on "Advanced"
+
 
 12. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/20.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 6"/>
@@ -108,6 +113,7 @@ Now we need to delete the other "Users" user names because we need the folder to
 
 To delete the "Users" we need to click on "Disable Inheritance" 
 
+
 13. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/21.png?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps 7"/>
    <br />
@@ -115,6 +121,7 @@ To delete the "Users" we need to click on "Disable Inheritance"
 </p>
 
 Choose the first option "Convert inherited permissions into explicit permissions on this object". The send option will delete all permissions. After this select the "Users" accounts one at time and click on ""Remove" to delete them.
+
 
 14. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/22.png?raw=true" height="70%" width="70%" alt="Disk Sanitization Steps 7"/>
@@ -124,6 +131,7 @@ Choose the first option "Convert inherited permissions into explicit permissions
 
 Now we will explore another way to add Users. Right click on the "HR" folder → Properties → Advanced and arrive to this page. Then click "Add"
 
+
 15. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/23.png?raw=true" height="60%" width="60%" alt="Disk Sanitization Steps 8"/>
    <br />
@@ -131,6 +139,7 @@ Now we will explore another way to add Users. Right click on the "HR" folder →
 </p>
 
 Then click "Select a principal" and follow the same process we did with adding "Sarah Jakes" to add "Billy Barnes" 
+
 
 16. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/24.png?raw=true" height="60%" width="60%" alt="Disk Sanitization Steps 8"/>
@@ -141,6 +150,7 @@ Then click "Select a principal" and follow the same process we did with adding "
 You can see the principal "Billy Barnes" has been added. Ensure that the "Modify" checkbox is checked and also delete the other "Users" accounts as we did earlier. 
 We will complete the same process with the other "Sales" folder and add "Bob Smith"
 
+
 17. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/25.png?raw=true" height="60%" width="60%" alt="Disk Sanitization Steps 8"/>
    <br />
@@ -148,6 +158,7 @@ We will complete the same process with the other "Sales" folder and add "Bob Smi
 </p>
 
 Now we will login the the "Windows PC" VM and login with Bob Smith's account and try to access the shared folder from the machine. 
+
 
 18. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/27.png?raw=true" height="60%" width="60%" alt="Disk Sanitization Steps 9"/>
@@ -157,11 +168,13 @@ Now we will login the the "Windows PC" VM and login with Bob Smith's account and
 
 Open "File Explorer" → "This PC" and type "\\DC01\sharedfiles" and click "Enter" at the top to access the shared folder.
 
+
 19. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/28.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 10"/>
    <br />
    <br />
 </p>
+
 
 
 20. <p align="center">
@@ -172,6 +185,7 @@ Open "File Explorer" → "This PC" and type "\\DC01\sharedfiles" and click "Ente
 
 Now open the "Sales" folder and create a Test word document to make sure Bob has rights to Write as well.
 
+
 21. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/29.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 10"/>
    <br />
@@ -180,11 +194,13 @@ Now open the "Sales" folder and create a Test word document to make sure Bob has
 
 Opening the other folders gives an error because we have Bob permissions for the "Sales" folder.
 
+
 22. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/30.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 11"/>
    <br />
    <br />
 </p>
+
 
 23. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/31.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 11"/>
@@ -194,6 +210,7 @@ Opening the other folders gives an error because we have Bob permissions for the
 
 Now we are going Map the Drive for easy access for the user so that they do not have to type in the network path like we did before. To do this we will highlight and copy the Network Path "\\DC01\sharedfiles\".
 
+
 24. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/32.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 11"/>
    <br />
@@ -201,6 +218,7 @@ Now we are going Map the Drive for easy access for the user so that they do not 
 </p>
 
 Then Right-click on **This PC** in **File Explorer** and select **Map this Network drive**.
+
 
 25. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/33.png?raw=true" height="60%" width="60%" alt="Disk Sanitization Steps 12"/>
@@ -212,6 +230,7 @@ Then Right-click on **This PC** in **File Explorer** and select **Map this Netwo
 In the **Map Network Drive** window, **Drive**, Choose a drive letter, such as **Z:**.
 Then on the **Folder**: Paste the network path \\DC01\sharedfiles into the field. Finally click **Finish**.
 
+
 26. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/34.png?raw=true" height="60%" width="60%" alt="Disk Sanitization Steps 12"/>
    <br />
@@ -219,6 +238,7 @@ Then on the **Folder**: Paste the network path \\DC01\sharedfiles into the field
 </p>
 
 The network drive has been Mapped successfuly. Every time the user logs in they will find it here. You can repeat the process for the other 2 users.
+
 
 27. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/35.png?raw=true" height="60%" width="60%" alt="Disk Sanitization Steps 13"/>
@@ -229,7 +249,7 @@ The network drive has been Mapped successfuly. Every time the user logs in they 
 
 Congratulations we have successfully created a Shared Folder, configured access permissions and mapped network drives.
 
- 👉 [Next Lab 8 : Windows 10 Remote Access: Remote Desktop, Remote Registry]
+ 👉 [Next Lab 8 : Group Policy Configuration]
 
 
 
