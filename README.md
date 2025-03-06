@@ -13,23 +13,23 @@ This section of my home lab documentation focuses on **Shared Files**, **Permiss
 
 We shall begin by creating 3 new **Organizational Units** (HR, Finance and Sales) , and 3 new user accounts in each of the OUs (Billy Barnes, Bob Smith and Sarah Jakes) respectively.
 
-1. <p align="center">
+ 1.<p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/1.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 1"/>
    <br />
    <br />
-</p>
+   </p>
 
-2. <p align="center">
+ 2.<p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/2.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 1"/>
    <br />
    <br />
-</p>
+   </p>
 
 3. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/3.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 1"/>
    <br />
    <br />
-</p>
+   </p>
 
 We will create one file share and create folders for each department that will be accessed by the user accounts. To create a file share select **File and Storage Services** on the left-hand side, followed by **Shares**. Right-click and select **New Share**.
 
@@ -37,13 +37,13 @@ We will create one file share and create folders for each department that will b
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/6.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 1"/>
    <br />
    <br />
-</p>
+   </p>
 
 5. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/7.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 1"/>
    <br />
    <br />
-</p>
+   </p>
 
 Choose "SMB Share - Quick", click Next until you reach the Specify Share Name screen. Name the share "shared files", then continue selecting Next until you reach the Create button. Click Create to finish setting up the shared folder.
 
@@ -51,14 +51,14 @@ Choose "SMB Share - Quick", click Next until you reach the Specify Share Name sc
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/8.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 2"/>
    <br />
    <br />
-</p>
+   </p>
 
 7. <p align="center">
    <img src="2. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/10.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 2"/>
    <br />
    <br />
-</p>
+   </p>
 
 Now that we have our shared folder, to confirm open File Explorer → This PC → Local C Drive → Shares to access the shared folder. Once you have accessed the folder, create 3 folders and name them HR, Finance and Sales. These are the folders that we shall share with the specific members associated to each department folder.
 
@@ -66,14 +66,14 @@ Now that we have our shared folder, to confirm open File Explorer → This PC �
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/15.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 4"/>
    <br />
    <br />
-</p>
+   </p>
 
 
 9. <p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/16.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 4"/>
    <br />
    <br />
-</p>
+   </p>
 
 
 Now we are going to specify access permissions for the folders. Now right click on the "Finance" folder and click on "Properties". 
@@ -88,12 +88,11 @@ Now we are going to specify access permissions for the folders. Now right click 
 Navigate to the "Security" tab and click on "Edit" to add "Sarah Jakes" as an authorized account for the "Finance" folder.
 
 
-11.
-   <p align="center">
+11.<p align="center">
    <img src="https://github.com/Eunice-Kamore/Security-Groups-Shared-Folders-and-Mapped-Drives/blob/main/Images/18.png?raw=true" height="80%" width="80%" alt="Disk Sanitization Steps 5"/>
    <br />
    <br />
-</p>
+   </p>
 
 
 Type the name "Sarah Jakes" and click on check names. This searches the name from our domain. Once the name is found click "OK"
